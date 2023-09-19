@@ -1,0 +1,299 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    max-width: 1817px;
+    list-style: none;
+}
+nav{
+    display: flex;
+    justify-content: center;
+    color: #7A1714;
+    background-color: #7A1714;
+    padding: 10px;
+    font-size: 12px;
+}
+body{
+    background-image: url("BackgroundP.png");
+    background-size: auto;
+    font: 12px Verdana, sans-serif;
+}
+header{
+    display: flex;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 12px;
+    justify-items: space-between;
+    justify-content: center;
+    font-size: 15px;
+}
+header a{
+    color:#7A1714;
+    text-decoration: none;
+    padding: 10px 50px 10px 0px;
+    position: relative;
+}
+header a::after{
+    content: " ";
+    width: 0%;
+    height: 2px;
+    background-color: #7A1714;
+    position: absolute;
+    bottom: 0;
+    left:0;
+    transition: 0.5s ease-in-out;
+}
+header a:hover::after{
+    width: 60%;
+}
+#icon{
+    margin-right: 5px;
+    padding: 10px 5px 2px 0px;
+}
+#logo{
+    padding-right: 10px;
+}
+#menu{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+}
+#agend{
+    color:#7A1714;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    font-size: 20px;
+}
+#Agendamentos{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1000px;
+    display: flex;
+    justify-self: flex-start;
+}
+#Introducao p{
+    width: 250px;
+    height: 270px;
+    background-color: white;
+    padding: 20px 30px 20px 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    box-shadow: 6px 6px 6px 1px #c4c3c3fc;
+    border-radius: 10px;
+    color: black;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-right: 20px;
+}
+#Introducao b{
+    color: black;
+    font-family: Arial, Helvetica, sans-serif; 
+}
+#Comunicacao p{
+    width: 250px;
+    height: 270px;
+    background-color: white;
+    padding: 20px 30px 20px 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    box-shadow: 6px 6px 6px 1px #c4c3c3fc;
+    border-radius: 10px;
+    color: black;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+#Comunicacao b{
+    color: black;
+    font-family: Arial, Helvetica, sans-serif; 
+}
+#Hora p{
+    width: 250px;
+    height: 270px;
+    background-color: white;
+    padding: 20px 30px 20px 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    box-shadow: 6px 6px 6px 1px #c4c3c3fc;
+    border-radius: 10px;
+    color: black;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-left: 20px;
+}
+#Hora b{
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+::-webkit-scrollbar{
+    width: 12px;
+}
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(transparent,#918f8ffc);
+    border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: linear-gradient(transparent,#7A1714);  
+}
+.Botao{
+    display: block;
+    justify-content: center;
+    margin: 30px auto;
+    width: 250px;
+    height: 30px;
+    color: white;
+    background-color: #7A1714;
+}
+#Pet{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1000px;
+    display: flex;
+    justify-items: center; 
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+#Pets h4{
+    color:#7A1714;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    font-size: 20px;
+}
+#Pet img {
+    position: relative;
+    top: 0;
+    transition: all 0.2s ease-in-out;
+    width: 125px;
+    height: 125px;
+    border: 3px ridge #7A1714;
+    border-radius: 100px;
+    margin-left: 62px;
+    margin-right: 50px;
+}
+#Pet img:hover {
+    top: -4px;
+    box-shadow: 0px 4px 3px 2px #918f8ffc;
+}
+#Max {
+    display: none;
+    position: absolute;
+    color: black;
+    top: 113px;
+    width: 302px;
+}
+#Pet img:hover + #Max {
+    display: block !important;
+    color: black;
+}
+#DescricaoP{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    position: absolute;
+}
+::selection{
+    color:white;
+    background-color: #7A1714;
+}
+#Pro h4{
+    color:#7A1714;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+    padding-top: 200px;
+    font-size: 20px;
+    margin-bottom: 55px;
+}
+#Alimentos{
+    display: flex;
+}
+#Racao{
+    padding: 30px;
+    background-color: white;
+    width: 300px;
+    height: 500px;
+    border-left: 10px solid #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 3px 2px #918f8ffc;
+    margin-left: 60px;
+}
+#Racao:hover{
+    border-left: 10px solid #7A1714;
+}
+#Alimentos h6{
+    color: #7A1714;
+    text-align: Left;
+    font-size: 22px;
+    border-top: 2px ridge #7A1714;
+    padding-top: 22px;
+}
+#Racao img{
+    max-width: 300px;
+    max-height: 400px;
+    padding-bottom: 20px;
+}
+#Racao img:hover{
+    transform: scale(1.3, 1.3);
+    background:white;
+    box-shadow: 2px 2px 15px rgba(0,0,0,.5);
+}
+#Racao .SM{
+    display: block;
+    justify-content: center;
+    margin: 30px auto;
+    width: 250px;
+    height: 30px;
+    color: white;
+    background-color: #7A1714;
+}
+button:hover{
+    color:#7A1714;
+    background-color: white;
+}
+footer{
+    margin-top: 50px;
+    padding-top: 50px;
+    padding-left: 50px;
+    padding: 17px 10%;
+    align-content: center;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    background-color: #7A1714;
+    color:white;
+    max-width: 1817px;
+}
+footer #Titulo{
+    padding-top: 10px;
+    padding-bottom: 30px;
+    font-size: 15px;
+    text-align: left;
+}
+footer p{
+    padding-top: 9px;
+    text-align: left;
+    color:#e2dada;
+}
+#Lista{
+    padding-bottom: 10px;
+}
+#Redes{
+    padding-left: 345px;
+}
+#Itens{
+    display: flex;
+}
+#Red{
+    margin: 5px;
+}
