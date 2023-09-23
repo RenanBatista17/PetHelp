@@ -54,8 +54,58 @@ header a:hover::after{
 #logo{
     padding-right: 10px;
 }
+#titulo h1{
+    color:#7A1714;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    font-size: 20px;
+}
+form{
+    width: 365px;
+    height: 500px;
+    margin: 15px auto;
+    margin-bottom: 67px;
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+form h3{
+    color: #7A1714;
+    text-align: left;
+    padding: 20px;
+}
+form input{
+    color: #7A1714;
+    display: block;
+    margin: 10px 62px;
+    width: 250px;
+    height: 20px;
+}
+#Cadastre input{
+    color: white;
+    display: block;
+    margin: 10px auto;
+    width: 250px;
+    height: 30px;
+    margin-top: 38px;
+    background-color: #7A1714;
+    border-radius: 10px;
+}
+#Cadastre input:hover{
+    color: #7A1714;
+    display: block;
+    margin: 10px auto;
+    width: 250px;
+    height: 30px;
+    margin-top: 38px;
+    background-color: white;
+    border-radius: 10px;
+}
 footer{
-    margin-top: 50px;
     padding-top: 50px;
     padding-left: 50px;
     padding: 17px 10%;

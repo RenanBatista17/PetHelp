@@ -1,3 +1,15 @@
+<?php
+    session_start();
+    include_once('config.php');
+    // print_r($_SESSION);
+    if((!isset($_SESSION['email']) == true) and (!isset($_SESSION['senha']) == true))
+    {
+        unset($_SESSION['email']);
+        unset($_SESSION['senha']);
+        header('Location: Login.php');
+    }
+    $logado = $_SESSION['email'];
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -14,19 +26,19 @@
     </nav>
     <header>
         <div id="logo">
-            <a href="HomePage.html">
+            <a href="HomePage.php">
                 <img src="PetHelp.png">
             </a>
         </div>
         <img src="Agendar.svg" height="20px" width="20px" id="icon">
-        <a href="AgendarConsulta.html">Agendar Consulta</a>
+        <a href="AgendarConsulta.php">Agendar Consulta</a>
         <img src="Cadastro.svg" height="20px" width="20px" id="icon">
-        <a href="CadastroPet.html">Cadastro Pet</a>
+        <a href="CadastroPet.php">Cadastro Pet</a>
         <img src="Perfil.svg" height="20px" width="20px" id="icon">
         <a href="">Perfil</a>
         <img src="Historico.svg" height="20px" width="20px" id="icon">
         <a href="">Histórico de Consultas</a>
-        <a href="Login.html">Sair</a>
+        <a href="Login.php">Sair</a>
     </header>
     <section id="AgendarC">
         <div id="titulo">
