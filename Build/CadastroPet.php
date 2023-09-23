@@ -18,6 +18,9 @@
     
         $result = mysqli_query($conexao, "INSERT INTO cadastrop(nomeP,idade,nomeD,telefone) VALUES ('$nomeP','$idade','$nomeD','$telefone')");  
     }
+
+    $sql = "SELECT * FROM cadastrop ORDER BY  id DESC";
+    $result = $conexao->query($sql);
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -36,16 +39,16 @@
     <header>
         <div id="logo">
             <a href="HomePage.php">
-                <img src="PetHelp.png">
+                <img src="Assets/PetHelp.png">
             </a>
         </div>
-        <img src="Agendar.svg" height="20px" width="20px" id="icon">
+        <img src="Assets/Agendar.svg" height="20px" width="20px" id="icon">
         <a href="AgendarConsulta.php">Agendar Consulta</a>
-        <img src="Cadastro.svg" height="20px" width="20px" id="icon">
+        <img src="Assets/Cadastro.svg" height="20px" width="20px" id="icon">
         <a href="CadastroPet.php">Cadastro Pet</a>
-        <img src="Perfil.svg" height="20px" width="20px" id="icon">
+        <img src="Assets/Perfil.svg" height="20px" width="20px" id="icon">
         <a href="">Perfil</a>
-        <img src="Historico.svg" height="20px" width="20px" id="icon">
+        <img src="Assets/Historico.svg" height="20px" width="20px" id="icon">
         <a href="">Histórico de Consultas</a>
         <a href="Login.php">Sair</a>
 </header>
@@ -77,9 +80,37 @@
         </form>
     </div>
 </section>
+<div id="Resultado">
+            <table id="table">
+                <thead id="Cabeca">
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Nome do Pet</th>
+                        <th scope="col">Idade do Pet</th>
+                        <th scope="col">Nome do Dono</th>
+                        <th scope="col">Número de Contato</th>
+                        <th scope="col">...</th>
+                    </tr>
+                </thead>
+                <tbody id="Corpo">
+                    <?php
+                        while($user_data = mysqli_fetch_assoc($result)){
+                            echo"<tr>";
+                            echo"<td>" .$user_data['id']."</td>";
+                            echo"<td>" .$user_data['nomeP']."</td>";
+                            echo"<td>" .$user_data['idade']."</td>";
+                            echo"<td>" .$user_data['nomeD']."</td>";
+                            echo"<td>" .$user_data['telefone']."</td>";
+                            echo"<td>ações</td>";
+                            echo"</tr>";
+                        }
+                    ?>
+                </tbody>
+            </table>
+        </div>
 <section>
     <div id="BannerCadastro">
-        <img src="CadastrarP.png" max-width="1817px">
+        <img src="Assets/CadastrarP.png" max-width="1817px">
     </div>
 </section>
 <footer>
@@ -96,10 +127,10 @@
         </div>
         <div id="Itens">
             <a href="" id="Red">
-                <img src="Instagram.svg" height="30px" width="30px">
+                <img src="Assets/Instagram.svg" height="30px" width="30px">
             </a>
             <a href="" id="Red">
-                <img src="Facebook.svg" height="30px" width="30px">
+                <img src="Assets/Facebook.svg" height="30px" width="30px">
             </a>
         </div>
     </div>

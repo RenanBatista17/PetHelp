@@ -35,7 +35,7 @@ if(isset($_POST['submit'])){
 </head>
 <body>
     <form action="Cadastro.php" method="POST">
-        <img src="PetHelp.png">
+        <img src="Assets/PetHelp.png">
         <h3>Cadastre-se</h3>
         <div id="CadastroGeral">
             <h4>Nome:</h4>

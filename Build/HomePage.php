@@ -27,16 +27,16 @@
     <header>
             <div id="logo">
                 <a href="HomePage.php">
-                    <img src="PetHelp.png">
+                    <img src="Assets/PetHelp.png">
                 </a>
             </div>
-            <img src="Agendar.svg" height="20px" width="20px" id="icon">
+            <img src="Assets/Agendar.svg" height="20px" width="20px" id="icon">
             <a href="AgendarConsulta.php">Agendar Consulta</a>
-            <img src="Cadastro.svg" height="20px" width="20px" id="icon">
+            <img src="Assets/Cadastro.svg" height="20px" width="20px" id="icon">
             <a href="CadastroPet.php">Cadastro Pet</a>
-            <img src="Perfil.svg" height="20px" width="20px" id="icon">
+            <img src="Assets/Perfil.svg" height="20px" width="20px" id="icon">
             <a href="">Perfil</a>
-            <img src="Historico.svg" height="20px" width="20px" id="icon">
+            <img src="Assets/Historico.svg" height="20px" width="20px" id="icon">
             <a href="">Histórico de Consultas</a>
             <a href="Login.php">Sair</a>
     </header>
@@ -82,10 +82,10 @@
     </div>
     <section id="Pet">
         <div id="Imagens">
-            <img src="Golden.png" onmouseover="showText('Max')" onmouseout="hideText('Max')">
-            <img src="Pug.png" onmouseover="showText('Pug')" onmouseout="hideText('Pug')">
-            <img src="Capeta.png" onmouseover="showText('Capeta')" onmouseout="hideText('Capeta')">
-            <img src="Shitsu.png" onmouseover="showText('Shitsu')" onmouseout="hideText('Shitsu')">
+            <img src="Assets/Golden.png" onmouseover="showText('Max')" onmouseout="hideText('Max')">
+            <img src="Assets/Pug.png" onmouseover="showText('Pug')" onmouseout="hideText('Pug')">
+            <img src="Assets/Capeta.png" onmouseover="showText('Capeta')" onmouseout="hideText('Capeta')">
+            <img src="Assets/Shitsu.png" onmouseover="showText('Shitsu')" onmouseout="hideText('Shitsu')">
         </div>
         <div id="DescricaoP">
             <p id="Max">
@@ -100,22 +100,22 @@
     </div>
     <section id="Alimentos">
         <div id="Racao">
-            <img src="Racao1.png" title="Racao">
+            <img src="Assets/Racao1.png" title="Racao">
             <h6>Ração Seca Pedigree para Cães Filhotes Raças Médias e Grandes</h6>
             <button onclick="Agendar();" class="SM">Saiba Mais!</button>
         </div>
         <div id="Racao">
-            <img src="Racao2.png" title="Racao2">
+            <img src="Assets/Racao2.png" title="Racao2">
             <h6>Ração Special Cat Ultralife Gatos Adultos Frango E Arroz 3 Kg</h6>
             <button onclick="Agendar();" class="SM">Saiba Mais!</button>
         </div>
         <div id="Racao">
-            <img src="Racao1.png" title="Racao">
+            <img src="Assets/Racao1.png" title="Racao">
             <h6>Ração Seca Pedigree para Cães Filhotes Raças Médias e Grandes</h6>
             <button onclick="Agendar();" class="SM">Saiba Mais!</button>
         </div>
         <div id="Racao">
-            <img src="Racao1.png" title="Racao">
+            <img src="Assets/Racao1.png" title="Racao">
             <h6>Ração Seca Pedigree para Cães Filhotes Raças Médias e Grandes</h6>
             <button onclick="Agendar();" class="SM">Saiba Mais!</button>
         </div>
@@ -134,10 +134,10 @@
             </div>
             <div id="Itens">
                 <a href="" id="Red">
-                    <img src="Instagram.svg" height="30px" width="30px">
+                    <img src="Assets/Instagram.svg" height="30px" width="30px">
                 </a>
                 <a href="" id="Red">
-                    <img src="Facebook.svg" height="30px" width="30px">
+                    <img src="Assets/Facebook.svg" height="30px" width="30px">
                 </a>
             </div>
         </div>

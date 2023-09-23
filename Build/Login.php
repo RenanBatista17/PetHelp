@@ -10,7 +10,7 @@
 </head>
 <body>
     <form action="verificar.php" method="POST">
-        <img src="PetHelp.png">
+        <img src="Assets/PetHelp.png">
         <h3>Login</h3>
         <input type="text" placeholder=" Gmail" id="gmail" name="email">
         <input type="password" placeholder=" Senha" id="senha"  name="senha">

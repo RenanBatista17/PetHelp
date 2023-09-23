@@ -18,6 +18,9 @@
     
         $result = mysqli_query($conexao, "INSERT INTO agendamentos(nomeP,nomeD,atendimento,dataA) VALUES ('$nomeP','$nomeD','$atendimento','$dataA')");  
     }
+
+    $sql = "SELECT * FROM agendamentos ORDER BY  id DESC";
+    $result = $conexao->query($sql);
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -39,13 +42,13 @@
                 <img src="PetHelp.png">
             </a>
         </div>
-        <img src="Agendar.svg" height="20px" width="20px" id="icon">
+        <img src="Assets/Agendar.svg" height="20px" width="20px" id="icon">
         <a href="AgendarConsulta.php">Agendar Consulta</a>
-        <img src="Cadastro.svg" height="20px" width="20px" id="icon">
+        <img src="Assets/Cadastro.svg" height="20px" width="20px" id="icon">
         <a href="CadastroPet.php">Cadastro Pet</a>
         <img src="Perfil.svg" height="20px" width="20px" id="icon">
         <a href="">Perfil</a>
-        <img src="Historico.svg" height="20px" width="20px" id="icon">
+        <img src="Assets/Historico.svg" height="20px" width="20px" id="icon">
         <a href="">Histórico de Consultas</a>
         <a href="Login.php">Sair</a>
     </header>
@@ -83,8 +86,36 @@
                 </div>
             </form>
         </div>
+        <div id="Resultado">
+            <table id="table">
+                <thead id="Cabeca">
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Nome do Pet</th>
+                        <th scope="col">Nome do Dono</th>
+                        <th scope="col">Tipo do Atendimento</th>
+                        <th scope="col">Data da Consulta</th>
+                        <th scope="col">...</th>
+                    </tr>
+                </thead>
+                <tbody id="Corpo">
+                    <?php
+                        while($user_data = mysqli_fetch_assoc($result)){
+                            echo"<tr>";
+                            echo"<td>" .$user_data['id']."</td>";
+                            echo"<td>" .$user_data['nomeP']."</td>";
+                            echo"<td>" .$user_data['nomeD']."</td>";
+                            echo"<td>" .$user_data['atendimento']."</td>";
+                            echo"<td>" .$user_data['dataA']."</td>";
+                            echo"<td>ações</td>";
+                            echo"</tr>";
+                        }
+                    ?>
+                </tbody>
+            </table>
+        </div>
         <div id="Conteudo">
-            <img src="Agendar.png" max-width="1817px">
+            <img src="Assets/Agendar.png" max-width="1817px">
         </div>
         <div id="Info">
             <div id="DescricaoA">
@@ -172,10 +203,10 @@
             </div>
             <div id="Itens">
                 <a href="" id="Red">
-                    <img src="Instagram.svg" height="30px" width="30px">
+                    <img src="Assets/Instagram.svg" height="30px" width="30px">
                 </a>
                 <a href="" id="Red">
-                    <img src="Facebook.svg" height="30px" width="30px">
+                    <img src="Assets/Facebook.svg" height="30px" width="30px">
                 </a>
             </div>
         </div>
