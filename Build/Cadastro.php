@@ -1,20 +1,11 @@
 <?php
 
 if(isset($_POST['submit'])){
-    // print_r($_POST['nome']);
-    // print_r('<br>');
-    // print_r($_POST['gmail']);
-    // print_r('<br>');
-    // print_r($_POST['cpf']);
-    // print_r('<br>');
-    // print_r($_POST['senha']);
-    // print_r('<br>');
-    // print_r($_POST['Pergunta']);
 
     include_once('config.php');
 
     $nome = $_POST['nome'];
-    $email = $_POST['gmail'];
+    $email = $_POST['email'];
     $cpf = $_POST['cpf'];
     $senha = $_POST['senha'];
     $tipo = $_POST['Pergunta'];
@@ -41,7 +32,7 @@ if(isset($_POST['submit'])){
             <h4>Nome:</h4>
             <input type="text" placeholder=" nome" id="nome" name="nome">
             <h4>G-mail:</h4>
-            <input type="text" placeholder=" exemplo@gmail.com" id="gmail" name="gmail">
+            <input type="text" placeholder=" exemplo@gmail.com" id="gmail" name="email">
             <h4>CPF:</h4>
             <input type="text" placeholder=" 000.000.000.00" id="cpf" name="cpf">
             <h4>Senha: </h4>

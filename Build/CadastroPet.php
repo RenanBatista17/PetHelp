@@ -47,7 +47,7 @@
         <img src="Assets/Cadastro.svg" height="20px" width="20px" id="icon">
         <a href="CadastroPet.php">Cadastro Pet</a>
         <img src="Assets/Perfil.svg" height="20px" width="20px" id="icon">
-        <a href="">Perfil</a>
+        <a href="Perfil.php">Perfil</a>
         <img src="Assets/Historico.svg" height="20px" width="20px" id="icon">
         <a href="">Histórico de Consultas</a>
         <a href="Login.php">Sair</a>
@@ -80,34 +80,32 @@
         </form>
     </div>
 </section>
-<div id="Resultado">
-            <table id="table">
-                <thead id="Cabeca">
-                    <tr>
-                        <th scope="col">#</th>
-                        <th scope="col">Nome do Pet</th>
-                        <th scope="col">Idade do Pet</th>
-                        <th scope="col">Nome do Dono</th>
-                        <th scope="col">Número de Contato</th>
-                        <th scope="col">...</th>
-                    </tr>
-                </thead>
-                <tbody id="Corpo">
-                    <?php
-                        while($user_data = mysqli_fetch_assoc($result)){
-                            echo"<tr>";
-                            echo"<td>" .$user_data['id']."</td>";
-                            echo"<td>" .$user_data['nomeP']."</td>";
-                            echo"<td>" .$user_data['idade']."</td>";
-                            echo"<td>" .$user_data['nomeD']."</td>";
-                            echo"<td>" .$user_data['telefone']."</td>";
-                            echo"<td>ações</td>";
-                            echo"</tr>";
-                        }
-                    ?>
-                </tbody>
-            </table>
-        </div>
+<table class="table">
+  <thead>
+    <tr>
+        <th scope="col">#</th>
+        <th scope="col">Nome do Pet</th>
+        <th scope="col">Idade do Pet</th>
+        <th scope="col">Nome do Dono</th>
+        <th scope="col">Número de Contato</th>
+        <th scope="col">...</th>
+    </tr>
+  </thead>
+  <tbody>
+    <?php
+        while($user_data = mysqli_fetch_assoc($result)){
+            echo"<tr>";
+            echo"<td>" .$user_data['id']."</td>";
+            echo"<td>" .$user_data['nomeP']."</td>";
+            echo"<td>" .$user_data['idade']."</td>";
+            echo"<td>" .$user_data['nomeD']."</td>";
+            echo"<td>" .$user_data['telefone']."</td>";
+            echo"<td>ações</td>";
+            echo"</tr>";
+        }
+    ?>
+  </tbody>
+</table>
 <section>
     <div id="BannerCadastro">
         <img src="Assets/CadastrarP.png" max-width="1817px">

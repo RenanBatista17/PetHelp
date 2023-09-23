@@ -35,7 +35,7 @@
             <img src="Assets/Cadastro.svg" height="20px" width="20px" id="icon">
             <a href="CadastroPet.php">Cadastro Pet</a>
             <img src="Assets/Perfil.svg" height="20px" width="20px" id="icon">
-            <a href="">Perfil</a>
+            <a href="Perfil.php">Perfil</a>
             <img src="Assets/Historico.svg" height="20px" width="20px" id="icon">
             <a href="">Histórico de Consultas</a>
             <a href="Login.php">Sair</a>
