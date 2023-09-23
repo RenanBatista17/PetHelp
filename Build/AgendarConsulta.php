@@ -9,6 +9,15 @@
         header('Location: Login.php');
     }
     $logado = $_SESSION['email'];
+
+    if(isset($_POST['submit'])){
+        $nomeP = $_POST['nomeP'];
+        $nomeD = $_POST['nomeD'];
+        $atendimento = $_POST['atendimento'];
+        $dataA = $_POST['dataA'];
+    
+        $result = mysqli_query($conexao, "INSERT INTO agendamentos(nomeP,nomeD,atendimento,dataA) VALUES ('$nomeP','$nomeD','$atendimento','$dataA')");  
+    }
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -45,18 +54,18 @@
             <h3>Agendamento de Consulta</h3>
         </div>
         <div id="CadastroConsulta">
-            <form>
+            <form form action="AgendarConsulta.php" method="POST">
                 <div id="NomePet">
                     <h6>Nome do Pet:</h6>
-                    <input type="text" placeholder="Nome pet">                   
+                    <input type="text" placeholder="Nome pet" name="nomeP">                   
                 </div>
                 <div id="NomePessoa">
                     <h6>Nome do Dono:</h6>
-                    <input type="text" placeholder="Nome">                    
+                    <input type="text" placeholder="Nome" name="nomeD">                    
                 </div>
                 <div id="TipoAtendimento">
                     <h6>Tipo Atendimento:</h6>
-                    <select id="Atendimentos">
+                    <select name="atendimento" id="Atendimentos">
                         <option id="banho">Banho e Tosa</option>
                         <option id="hospedagem">Hospedagem</option>
                         <option id="adestramento">Adestramento</option>
@@ -67,10 +76,10 @@
                 </div>
                 <div id="DataConsulta">
                     <h6>Data da Consulta:</h6>
-                    <input type="date" placeholder="data">                    
+                    <input type="date" placeholder="data" name="dataA">                    
                 </div>
                 <div id="Agende">
-                    <input type="submit" placeholder="Agendar" value="Agendar">
+                    <input type="submit" placeholder="Agendar" value="Agendar" name="submit">
                 </div>
             </form>
         </div>

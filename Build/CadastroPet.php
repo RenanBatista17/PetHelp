@@ -9,6 +9,15 @@
         header('Location: Login.php');
     }
     $logado = $_SESSION['email'];
+
+    if(isset($_POST['submit'])){
+        $nomeP = $_POST['nomeP'];
+        $idade = $_POST['idade'];
+        $nomeD = $_POST['nomeD'];
+        $telefone = $_POST['telefone'];
+    
+        $result = mysqli_query($conexao, "INSERT INTO cadastrop(nomeP,idade,nomeD,telefone) VALUES ('$nomeP','$idade','$nomeD','$telefone')");  
+    }
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -45,25 +54,25 @@
         <div id="titulo">
             <h1>Cadastre o seu Pet</h1>
         </div>
-        <form>
+        <form form action="CadastroPet.php" method="POST">
             <div id="NomeP">
                 <h3>Nome do Pet:</h3>
-                <input type="text" placeholder="Nome do Pet">
+                <input type="text" placeholder="Nome do Pet" name="nomeP">
             </div>
             <div id="IdadeP">
                 <h3>Idade do Pet:</h3>
-                <input type="number" placeholder="1">
+                <input type="number" placeholder="1" name="idade">
             </div>
             <div id="NomeD">
                 <h3>Nome do Dono:</h3>
-                <input type="text" placeholder="Nome do Dono">
+                <input type="text" placeholder="Nome do Dono" name="nomeD">
             </div>
             <div id="Telefone">
                 <h3>Númro de Contato:</h3>
-                <input type="text" placeholder="(xx) x xxxx-xxxx">
+                <input type="text" placeholder="(xx) x xxxx-xxxx" name="telefone">
             </div>
             <div id="Cadastre">
-                <input type="submit" placeholder="Cadastrar" value="Cadastrar">
+                <input type="submit" placeholder="Cadastrar" value="Cadastrar" name="submit">
             </div>
         </form>
     </div>
