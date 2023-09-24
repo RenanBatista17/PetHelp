@@ -22,11 +22,11 @@ if(isset($_POST['submit'])){
     <title>Cadastre-se</title>
     <link rel="stylesheet" type="text/css" href="Cadastro.css">
     <script src="Login.js" type="text/javascript"></script>
-    <link rel="shortcut icon" type="imagex/png" href="Icon.svg">
+    <link rel="shortcut icon" type="imagex/png" href="imagens/Icon.svg">
 </head>
 <body>
     <form action="Cadastro.php" method="POST">
-        <img src="Assets/PetHelp.png">
+        <img src="imagens/PetHelp.png">
         <h3>Cadastre-se</h3>
         <div id="CadastroGeral">
             <h4>Nome:</h4>

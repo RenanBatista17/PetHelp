@@ -15,7 +15,7 @@ nav{
     font-size: 12px;
 }
 body{
-    background-image: url("BackgroundP.png");
+    background-image: url("imagens/BackgroundP.png");
     background-size: auto;
     font: 12px Verdana, sans-serif;
 }
@@ -104,4 +104,26 @@ footer p{
 }
 ::-webkit-scrollbar-thumb:hover{
     background: linear-gradient(transparent,#7A1714);  
+}
+#icon{
+    margin-right: 5px;
+    padding: 10px 5px 2px 0px;
+}
+#logo{
+    padding-right: 10px;
+}
+table{
+    background-color: rgba(0, 0, 0, 0.3);
+    margin: 10px auto;
+    padding: 30px;
+    border-radius: 15px;
+}
+thead th{
+    text-align: center;
+    padding-bottom: 50px;
+    padding-right: 190px;
+    color:#7A1714;
+}
+svg{
+    margin-right: 25px;
 }

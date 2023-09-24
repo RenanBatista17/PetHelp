@@ -1,5 +1,5 @@
 function Agendar(){
-    location.href = "Agendamento.html";
+    location.href = "AgendarConsulta.php";
 }
 function showText(petId) {
     var textElement = document.getElementById(petId);

@@ -17,7 +17,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PetHelp</title>
     <link rel="stylesheet" type="text/css" href="HomePage.css">
-    <link rel="shortcut icon" type="imagex/png" href="Icon.svg">
+    <link rel="shortcut icon" type="imagex/png" href="imagens/Icon.svg">
     <script src="HomePage.js" type="text/javascript"></script>
 </head>
 <body>
@@ -27,22 +27,22 @@
     <header>
             <div id="logo">
                 <a href="HomePage.php">
-                    <img src="Assets/PetHelp.png">
+                    <img src="imagens/PetHelp.png">
                 </a>
             </div>
-            <img src="Assets/Agendar.svg" height="20px" width="20px" id="icon">
+            <img src="imagens/Agendar.svg" height="20px" width="20px" id="icon">
             <a href="AgendarConsulta.php">Agendar Consulta</a>
-            <img src="Assets/Cadastro.svg" height="20px" width="20px" id="icon">
+            <img src="imagens/Cadastro.svg" height="20px" width="20px" id="icon">
             <a href="CadastroPet.php">Cadastro Pet</a>
-            <img src="Assets/Perfil.svg" height="20px" width="20px" id="icon">
+            <img src="imagens/Perfil.svg" height="20px" width="20px" id="icon">
             <a href="Perfil.php">Perfil</a>
-            <img src="Assets/Historico.svg" height="20px" width="20px" id="icon">
+            <img src="imagens/Historico.svg" height="20px" width="20px" id="icon">
             <a href="">Histórico de Consultas</a>
             <a href="Login.php">Sair</a>
     </header>
     <section id="Menu">
         <div id="Novidades">
-            <img src="Banner.png" alt="banner1" id="banner1" width="1805px">
+            <img src="imagens/Banner.png" alt="banner1" id="banner1" width="1805px">
         </div>
         <h4 id="agend">Agendamentos</h4>
         <div id="Agendamentos">
@@ -82,10 +82,10 @@
     </div>
     <section id="Pet">
         <div id="Imagens">
-            <img src="Assets/Golden.png" onmouseover="showText('Max')" onmouseout="hideText('Max')">
-            <img src="Assets/Pug.png" onmouseover="showText('Pug')" onmouseout="hideText('Pug')">
-            <img src="Assets/Capeta.png" onmouseover="showText('Capeta')" onmouseout="hideText('Capeta')">
-            <img src="Assets/Shitsu.png" onmouseover="showText('Shitsu')" onmouseout="hideText('Shitsu')">
+            <img src="imagens/Golden.png" onmouseover="showText('Max')" onmouseout="hideText('Max')">
+            <img src="imagens/Pug.png" onmouseover="showText('Pug')" onmouseout="hideText('Pug')">
+            <img src="imagens/Capeta.png" onmouseover="showText('Capeta')" onmouseout="hideText('Capeta')">
+            <img src="imagens/Shitsu.png" onmouseover="showText('Shitsu')" onmouseout="hideText('Shitsu')">
         </div>
         <div id="DescricaoP">
             <p id="Max">
@@ -100,22 +100,22 @@
     </div>
     <section id="Alimentos">
         <div id="Racao">
-            <img src="Assets/Racao1.png" title="Racao">
+            <img src="imagens/Racao1.png" title="Racao">
             <h6>Ração Seca Pedigree para Cães Filhotes Raças Médias e Grandes</h6>
             <button onclick="Agendar();" class="SM">Saiba Mais!</button>
         </div>
         <div id="Racao">
-            <img src="Assets/Racao2.png" title="Racao2">
+            <img src="imagens/Racao2.png" title="Racao2">
             <h6>Ração Special Cat Ultralife Gatos Adultos Frango E Arroz 3 Kg</h6>
             <button onclick="Agendar();" class="SM">Saiba Mais!</button>
         </div>
         <div id="Racao">
-            <img src="Assets/Racao1.png" title="Racao">
+            <img src="imagens/Racao1.png" title="Racao">
             <h6>Ração Seca Pedigree para Cães Filhotes Raças Médias e Grandes</h6>
             <button onclick="Agendar();" class="SM">Saiba Mais!</button>
         </div>
         <div id="Racao">
-            <img src="Assets/Racao1.png" title="Racao">
+            <img src="imagens/Racao1.png" title="Racao">
             <h6>Ração Seca Pedigree para Cães Filhotes Raças Médias e Grandes</h6>
             <button onclick="Agendar();" class="SM">Saiba Mais!</button>
         </div>
@@ -134,10 +134,10 @@
             </div>
             <div id="Itens">
                 <a href="" id="Red">
-                    <img src="Assets/Instagram.svg" height="30px" width="30px">
+                    <img src="imagens/Instagram.svg" height="30px" width="30px">
                 </a>
                 <a href="" id="Red">
-                    <img src="Assets/Facebook.svg" height="30px" width="30px">
+                    <img src="imagens/Facebook.svg" height="30px" width="30px">
                 </a>
             </div>
         </div>

@@ -29,7 +29,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agendar Consulta</title>
     <link rel="stylesheet" type="text/css" href="AgendarConsulta.css">
-    <link rel="shortcut icon" type="imagex/png" href="Icon.svg">
+    <link rel="shortcut icon" type="imagex/png" href="imagens/Icon.svg">
     <script src="AgendarConsulta.js" type="text/javascript"></script>
 </head>
 <body>
@@ -39,16 +39,16 @@
     <header>
         <div id="logo">
             <a href="HomePage.php">
-                <img src="PetHelp.png">
+                <img src="imagens/PetHelp.png">
             </a>
         </div>
-        <img src="Assets/Agendar.svg" height="20px" width="20px" id="icon">
+        <img src="imagens/Agendar.svg" height="20px" width="20px" id="icon">
         <a href="AgendarConsulta.php">Agendar Consulta</a>
-        <img src="Assets/Cadastro.svg" height="20px" width="20px" id="icon">
+        <img src="imagens/Cadastro.svg" height="20px" width="20px" id="icon">
         <a href="CadastroPet.php">Cadastro Pet</a>
-        <img src="Perfil.svg" height="20px" width="20px" id="icon">
+        <img src="imagens/Perfil.svg" height="20px" width="20px" id="icon">
         <a href="Perfil.php">Perfil</a>
-        <img src="Assets/Historico.svg" height="20px" width="20px" id="icon">
+        <img src="imagens/Historico.svg" height="20px" width="20px" id="icon">
         <a href="">Histórico de Consultas</a>
         <a href="Login.php">Sair</a>
     </header>
@@ -126,7 +126,7 @@
             </table>
         </div>
         <div id="Conteudo">
-            <img src="Assets/Agendar.png" max-width="1817px">
+            <img src="imagens/Agendar.png" max-width="1817px">
         </div>
         <div id="Info">
             <div id="DescricaoA">
@@ -214,10 +214,10 @@
             </div>
             <div id="Itens">
                 <a href="" id="Red">
-                    <img src="Assets/Instagram.svg" height="30px" width="30px">
+                    <img src="imagens/Instagram.svg" height="30px" width="30px">
                 </a>
                 <a href="" id="Red">
-                    <img src="Assets/Facebook.svg" height="30px" width="30px">
+                    <img src="imagens/Facebook.svg" height="30px" width="30px">
                 </a>
             </div>
         </div>

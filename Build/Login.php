@@ -6,11 +6,11 @@
     <title>Login</title>
     <link rel="stylesheet" type="text/css" href="Login.css">
     <script src="Login.js" type="text/javascript"></script>
-    <link rel="shortcut icon" type="imagex/png" href="Icon.svg">
+    <link rel="shortcut icon" type="imagex/png" href="imagens/Icon.svg">
 </head>
 <body>
     <form action="verificar.php" method="POST">
-        <img src="Assets/PetHelp.png">
+        <img src="imagens/PetHelp.png">
         <h3>Login</h3>
         <input type="text" placeholder=" Gmail" id="gmail" name="email">
         <input type="password" placeholder=" Senha" id="senha"  name="senha">
