@@ -110,13 +110,13 @@
             <button onclick="Agendar();" class="SM">Saiba Mais!</button>
         </div>
         <div id="Racao">
-            <img src="imagens/Racao1.png" title="Racao">
-            <h6>Ração Seca Pedigree para Cães Filhotes Raças Médias e Grandes</h6>
+            <img src="imagens/Racao3.png" title="Racao">
+            <h6>Sachê Ração Pedigree 100g Cães Adultos Sabor Frango ao Molho</h6>
             <button onclick="Agendar();" class="SM">Saiba Mais!</button>
         </div>
         <div id="Racao">
-            <img src="imagens/Racao1.png" title="Racao">
-            <h6>Ração Seca Pedigree para Cães Filhotes Raças Médias e Grandes</h6>
+            <img src="imagens/Racao4.png" title="Racao" height="300px" width="300px">
+            <h6>Ração Royal Canin Para Cães Filhote Da Raça Maltes 01 Kg Carne</h6>
             <button onclick="Agendar();" class="SM">Saiba Mais!</button>
         </div>
     </section>

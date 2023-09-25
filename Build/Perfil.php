@@ -89,7 +89,7 @@
         </table>
     </div>
     <div id="BannerPerfil">
-        <img src="imagens/PerfilM" max-width="1817px">
+        <img src="imagens/PerfilM.png" max-width="1817px">
     </div>
     <footer>
         <ul id="Lista">
